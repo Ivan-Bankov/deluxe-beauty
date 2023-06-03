@@ -1,3 +1,10 @@
-# DELUXE Beauty (WIP)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DELUXE (WIP)
+## What it does:
+DELUXE is a CRUD web application designed to resemble the website of a beauty salon. It offers a number services as well as user profiles.<br>
+Currently the main functionality of the app is to create and delete user profiles, as well as read information from a database about said profiles. The finished project will have a functuionality for updating the user's username as well as a form for sending "emails" to another database.
+## Technologies used:
+React is used for the frontend along with SCSS instead of CSS and Node.js is used for the backend along with TypeScript instead of JavaScript. Cors and Axios are used to make the connection between the fronend and the backend. Express is used for running the backend. XAMPP and MySQL are used for the databases. Cookie-parser is used for the cookie. dotenv is used for the environment variables. Sass and react-router-dom are also used.
+## Why said technologies:
+I decided to use React because it's the most used JavaScript framework and Node.js because it's based on JavaScript. I chose MySQL as my database managment system because it's easy to use and it fits the requirements of the project. SCSS and TypeScript are used because I wanted to expand my knowledge and learn how to work with them. Cors and Axios are the best choice in my opinion for making the conncetion between the fronend and backend as well as sending the needed information. Cookie-parser is used for the same reason MySQL is. React-router-dom is the best decision for the frontend routing considering the use of React.
+## How to install it:
+First you need to clone/download the project as usual. Then you need to navigate to the *client* directory and run *npm i* in the terminal to install all of the dependancies for the frontend. After that you have to navigate to the *server* directory and do the same. To start the fronted you need to execute *npm run start* while in the *client* directory and to start the backend you need to execute the *npm run devStart* command in the terminal while in the *server* directory.
