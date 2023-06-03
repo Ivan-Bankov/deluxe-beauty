@@ -27,5 +27,5 @@ TBA
 ## Credits:
 **Fellow member Gabriela Hristova: https://github.com/gabriela-hrs**<br>
 Dilyan Atanasov: https://github.com/dilyanatanasov<br>
-Brian Design: https://youtu.be/I2UBjN5ER4s
+Brian Design: https://youtu.be/I2UBjN5ER4s<br>
 Code with Yousaf: https://youtu.be/0i86B4mU-vw, https://youtu.be/18WAdYHILrY
