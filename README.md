@@ -9,7 +9,7 @@ I decided to use React because it's the most used JavaScript framework and Node.
 ## How to install it:
 First you need to clone/download the project as usual. Then you need to open XAMPP and start Apache and MySQL. (If you have a problem or they need to be configured you need to do that.) After that you need to create a database and name a table **user_log_ins** with fields for **id**, **username**, and **password**. The ID should be auto incremented! Next you have to create a *.env* file in the *server* directory and add the following environment variables:<br>
 <br>
-ORIGIN=http://localhost:*the port your frontend runs on*<br>
+ORIGIN=http://localhost: *the port your frontend runs on without the space*<br>
 PORT=*the port your backend will be running on*<br>
 <br>
 HOST=*the host of your database*<br>
