@@ -1,0 +1,929 @@
+/* font-family: 'Jacques Francois', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Newsreader', serif; */
+
+// Global Styles start
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  width: 16rem;
+  height: 4rem;
+  color: black;
+  font-size: 1.2rem;
+  border: none;
+  background-color: hsl(32, 27%, 44%, 0.95);
+  font-family: 'Jacques Francois', serif;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(0.8);
+}
+
+.title {
+  font-size: 2.4rem;
+  font-family: 'Jacques Francois', serif;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title-line {
+  height: 0.3rem;
+  width: 30%;
+  background-color: #8F7352;
+}
+
+.paragraph-size {
+  font-size: 1.2rem;
+}
+
+.account-link {
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+// End Of Global Styles
+
+// Login and Register start
+.account-form-container {
+  background-image: url(../public/images/navbar-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100lvh;
+  align-items: center;
+
+  > * {
+    z-index: 1;
+  }
+
+  .account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 3rem;
+    padding: 4rem;
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+
+    .title {
+      color: #8F7352;
+      margin-bottom: 2rem;
+    }
+
+    p, .account-link {
+      color: #8F7352;
+      font-size: 1.2rem;
+      font-family: 'Jacques Francois', serif;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+
+
+    label, input {
+      color: #8F7352;
+      font-size: 1.2rem;
+      font-family: 'Jacques Francois', serif;
+    }
+
+    input {
+      padding: 1rem;
+      border: none;
+      border-bottom: 0.1rem solid #8F7352;
+      font-family: 'Jacques Francois', serif;
+      background-color: black;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.account-form-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .25;
+}
+// Login and Register end
+
+//Navbar start
+.navbar {
+  background-color: black;
+
+  .navbar-top {
+      background-image: url(../public/images/navbar-background.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+      padding: 1rem;
+      text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.75);
+
+      .title-link {
+        text-align: center;
+        color: #8F7352;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .salon-name {
+        display: inline-block;
+        font-family: 'Newsreader', serif;
+        font-size: 4.8rem;
+        margin-top: 0.5rem;
+      }
+  }
+
+  /* Styling Container */
+
+  .navbar-container {
+      display: flex;
+      justify-content: center;
+      width: 85%;
+      margin: auto;
+
+      .nav-row {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .profile-btn {
+            width: 2.4rem;
+            height: 2.4rem;
+            overflow: hidden;
+            background-image: url(../public/images/user.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+            transition: all 1s;
+
+            &:hover {
+              transform: scale(0.8);
+            }
+          }
+      }
+
+      /* Links start */
+
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+
+        .nav-item {
+          font-size: 1.2rem;
+          list-style: none;
+          font-family: 'Jacques Francois', serif;
+        }
+
+        .nav-link {
+          color: #8F7352;
+          padding: 1rem 2rem;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #8F7352;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+//Navbar end
+
+//UserProfile start
+.profile-section {
+  background-color: black;
+}
+
+.profile-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 8rem;
+
+  h4, p {
+    color: #8F7352;
+    font-family: 'Jacques Francois', serif;
+  }
+
+  p {
+    font-size: 1.2rem;
+
+    .account-link {
+      color: #8F7352;
+    }
+  }
+}
+
+.user-btns {
+  display: flex;
+  gap: 4rem;
+}
+// UserProfile end
+
+//EditProfile start
+.change-username-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 3rem;
+  padding: 4rem;
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+}
+//EditProfile end
+
+//ScrollButton start
+.scroll-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 10%;
+  width: 4rem;
+  height: 4rem;
+}
+//ScrollButton end
+
+//Home start
+.hero-section {
+  background-image: url(../public/images/hero-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 60rem 4rem rgba(0, 0, 0, 0.25);
+
+  .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8rem 0;
+
+    .hero-btn {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    .appointment-btn {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+
+.services-section {
+  padding-bottom: 8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(6, auto);
+  background-color: black;
+
+  .service {
+    width: 100%;
+    display: flex;
+
+    .service-img {
+      width: 50%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+    }
+
+    .service-info {
+      width: 50%;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      > * {
+        color: #8F7352;
+      }
+
+      .service-description {
+        width: 65%;
+        font-family: 'Jacques Francois', serif;
+      }
+    }
+  }
+}
+
+/* About section start */
+
+.about-section {
+  padding-bottom: 8rem;
+  background-color: black;
+
+  .about-container {
+    width: 85%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  > * {
+    color: #8F7352;
+    font-family: 'Jacques Francois', serif;
+  }
+
+  > * {
+    text-decoration: none;
+  }
+
+  .account-link {
+    color: #8F7352;
+  }
+
+}
+//Home end
+
+//Contacts start
+.contacts-page {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  background-color: black;
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+  }
+
+  .contacts-page-container {
+    width: 85%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  > * {
+    color: #8F7352;
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.2rem;
+  }
+
+  .contacts-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .addresses, .phone-numbers, .emails {
+      margin-bottom: 3rem;
+    }
+
+    .location-map-container {
+      width: 36rem;
+      height: 36rem;
+
+      .location-map {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.contacts-form {
+  padding-top: 4rem;
+  padding-bottom: 0.1rem;
+  background-color: #8F7352;
+}
+
+.contacts-page > * {
+  font-family: 'Jacques Francois', serif;
+  font-size: 1.2rem;
+}
+
+.reservations-form {
+  width: 85%;
+  margin: 4rem auto;
+  background-color: black;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  padding: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  label, input, select {
+    color: #8F7352;
+    font-size: 1.2rem;
+    font-family: 'Jacques Francois', serif;
+  }
+
+  label {
+    margin-bottom: 2rem;
+  }
+
+  input, select {
+    padding: 1rem;
+    border: none;
+    border-bottom: 0.1rem solid #8F7352;
+    font-family: 'Jacques Francois', serif;
+    background-color: black;
+    margin-bottom: 4rem;
+  }
+}
+
+.form-title-line {
+  height: 0.3rem;
+  width: 20%;
+  background-color: black;
+}
+.account-form label {
+  margin-bottom: 2rem;
+}
+
+.reservations-form input::placeholder {
+  color: #8F7352;
+  opacity: 1;
+}
+
+.blur {
+  position: relative;
+  pointer-events: none;
+
+  > * {
+    filter: blur(0.15rem);
+    pointer-events: none;
+  }
+
+  .note-container {
+    pointer-events: all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 75%;
+    height: fit-content;
+    filter: blur(0);
+    background-color: #8F7352;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    .black-outline {
+      border: 0.3rem solid black;
+      margin: auto;
+      width: 100%;
+      height: 10rem;
+      filter: blur(0);
+      background-color: #8F7352;
+      padding: 10rem 1rem;
+      border-radius: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    p {
+      padding: 0 10%;
+      text-align: center;
+    }
+
+    .account-link {
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//Contacts end
+
+//Footer start
+.desktop-footer, .mobile-footer {
+  background-color: #8F7352;
+  padding: 8rem 0;
+
+  .footer-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer-about {
+      width: 30%;
+
+      .footer-salon-name {
+        font-size: 3.6rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .footer-nav, .footer-services, .footer-contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .footer-title {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-link {
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+
+      .footer-link-first {
+        margin-bottom: 1rem;
+      }
+
+      .footer-p, .footer-services a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.mobile-footer {
+  display: none;
+}
+//Footer end
+
+// Responsive start
+
+@media only screen and (max-width: 1000px) {
+
+  // Global start
+
+  .btn {
+    width: 12rem;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+
+  .scroll-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .title-line {
+    height: 0.2rem;
+  }
+
+  .paragraph-size {
+    font-size: 0.9rem;
+  }
+
+  // Global end
+
+  // Navbar start
+
+  .navbar {
+    .navbar-top {
+      .salon-name {
+        font-size: 3.6rem;
+      }
+    }
+
+    .navbar-container {
+      .nav-row {
+        .profile-btn {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+      .nav-menu {
+        .nav-item {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  // Navbar end
+
+  // Home page start
+
+  .hero-section {
+    .container {
+      .hero-btn {
+        width: 9rem;
+        height: 9rem;
+      }
+    }
+  }
+
+  // Home page end
+
+  // Contacts page start
+
+  .contacts-page {
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      text-indent: 1.5rem;
+    }
+
+    > * {
+      font-size: 0.9rem;
+    }
+  }
+
+  .form-title-line {
+    height: 0.2rem;
+    width: 15%;
+    background-color: black;
+  }
+
+  .reservations-form {
+
+    label, input, select {
+      font-size: 0.9rem;
+    }
+
+    label {
+      margin-bottom: 1.5rem;
+    }
+
+    input, select {
+      padding: 0.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .account-form label {
+    margin-bottom: 1.5rem;
+  }
+
+  // Contacts page end
+
+  .desktop-footer, .mobile-footer {
+    .footer-container {
+      .footer-about {
+        .footer-salon-name {
+          font-size: 2.4rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .footer-nav, .footer-services, .footer-contacts {
+        .footer-title {
+          font-size: 0.9rem;
+        }
+
+        .footer-link {
+          font-size: 0.9rem;
+        }
+
+        .footer-p, .footer-services a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  // Global start
+
+  .btn {
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.6rem;
+  }
+
+  .scroll-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .paragraph-size {
+    font-size: 0.9rem;
+  }
+
+  // Global end
+
+  // Navbar start
+
+  .navbar {
+    .navbar-top {
+      .salon-name {
+        font-size: 2.4rem;
+      }
+    }
+
+    .navbar-container {
+      .nav-row {
+        .profile-btn {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+      .nav-menu {
+        .nav-item {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  // Navbar end
+
+  // Home page start
+
+  .hero-section {
+    .container {
+      .hero-btn {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+  }
+
+  .services-section {
+    .service {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .service-img {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .service-info {
+        width: 100%;
+        height: 24rem;
+
+      }
+    }
+
+    .column-reverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  // Home page end
+
+  // Contacts page start
+
+  .contacts-page {
+    .contacts-page-container {
+      flex-direction: column-reverse;
+
+      .location-map-container {
+        width: 24rem;
+        height: 24rem;
+      }
+
+      .contacts-page-info {
+        width: 24rem;
+      }
+    }
+  }
+
+  .form-title-line {
+    height: 0.2rem;
+    width: 10%;
+    background-color: black;
+  }
+
+  .reservations-form {
+    .note-container {
+      .black-outline {
+        border: 0.15rem solid black;
+        margin: auto;
+        width: 100%;
+        padding: 8rem 1rem;
+        border-radius: 2rem;
+        gap: 2rem;
+      }
+    }
+  }
+
+  // Contacts page end
+
+  // Footer start
+
+  .desktop-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+
+    .footer-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 4rem;
+
+      .footer-about {
+        width: 100%;
+      }
+
+      .footer-nav, .footer-services, .footer-contacts {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .footer-link {
+          font-size: 0.9rem;
+        }
+
+        .footer-p, .footer-services a {
+          font-size: 0.9rem;
+        }
+      }
+
+      .mobile-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  // Footer end
+}
